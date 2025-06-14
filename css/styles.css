@@ -2,6 +2,10 @@
   display: none;
 }
 
+* {
+  outline: 1px solid red;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -379,7 +383,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office-mobile.jpg);
-  max-width: 320px;
+
   width: 100%;
   padding: 72px 0;
   margin: 0 auto;
@@ -443,7 +447,7 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office-tablet.jpg);
-    max-width: 768px;
+
     width: 100%;
     padding: 112px 0;
   }
@@ -473,7 +477,6 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    max-width: 1158px;
     width: 100%;
     padding: 188px 0;
   }

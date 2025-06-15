@@ -2,10 +2,6 @@
   display: none;
 }
 
-* {
-  outline: 1px solid red;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -384,9 +380,8 @@ img {
     ),
     url(../images/people-office-mobile.jpg);
 
-  width: 100%;
+  max-width: 1440px;
   padding: 72px 0;
-  margin: 0 auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -410,8 +405,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  margin: 0 auto;
-  margin-bottom: 72px;
+  margin: 0 auto 72px;
 }
 
 /* button */
@@ -448,7 +442,6 @@ img {
       ),
       url(../images/people-office-tablet.jpg);
 
-    width: 100%;
     padding: 112px 0;
   }
 
@@ -477,7 +470,6 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
-    width: 100%;
     padding: 188px 0;
   }
 
@@ -501,6 +493,7 @@ img {
 .features-section {
   padding: 96px 0;
   margin: 0 auto;
+  max-width: 288px;
 }
 
 .features-icons-content {
@@ -520,7 +513,7 @@ img {
 
 .features-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 72px;
 }
 
@@ -530,6 +523,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.features-item {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {

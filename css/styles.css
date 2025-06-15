@@ -493,7 +493,6 @@ img {
 .features-section {
   padding: 96px 0;
   margin: 0 auto;
-  max-width: 288px;
 }
 
 .features-icons-content {
@@ -513,7 +512,7 @@ img {
 
 .features-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 72px;
 }
 
@@ -539,7 +538,7 @@ img {
   }
 
   .features-item {
-    width: calc((100% - 24px * 1) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 

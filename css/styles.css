@@ -380,7 +380,7 @@ img {
     ),
     url(../images/people-office-mobile.jpg);
 
-  max-width: 1440px;
+  max-width: 320px;
   width: 100%;
   padding: 72px 0;
   margin: 0 auto;
@@ -445,6 +445,7 @@ img {
       url(../images/people-office-tablet.jpg);
 
     padding: 112px 0;
+    max-width: 768px;
   }
 
   @media screen and (min-resolution: 2x) {
@@ -473,6 +474,7 @@ img {
       ),
       url(../images/people-office.jpg);
     padding: 188px 0;
+    max-width: 1440px;
   }
 
   @media screen and (min-resolution: 2x) {
@@ -580,4 +582,11 @@ img {
   .features-text {
     font-weight: 400;
   }
+}
+
+/* Our Team Section */
+
+.section-team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
 }

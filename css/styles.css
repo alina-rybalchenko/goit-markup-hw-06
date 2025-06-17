@@ -831,6 +831,7 @@ img {
 .footer-right,
 .footer-subscribe {
   text-align: center;
+  max-width: 288px;
   width: 100%;
 }
 

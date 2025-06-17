@@ -817,35 +817,35 @@ img {
 
 .page-footer {
   background-color: #2e2f42;
-  padding: 96px 0;
+  padding: 96px 16px;
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-direction: column;
-  gap: 72px;
+  column-gap: 24px;
+  row-gap: 72px;
 }
 
 .footer-left,
 .footer-right,
 .footer-subscribe {
   width: 100%;
-  max-width: 288px;
+
   text-align: center;
-  align-items: center;
 }
 
-.subscribe-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  width: 100%;
+.footer-left {
+  max-width: 288px;
 }
 
-.subscribe-button {
-  align-self: center;
+.footer-right {
+  max-width: 208px;
+}
+
+.footer-subscribe {
+  max-width: 288px;
 }
 
 .footer-logo {
@@ -862,6 +862,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin: 0;
   text-align: left;
 }
 
@@ -902,6 +903,18 @@ img {
 
 .footer-icons {
   fill: #f4f4fd;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  align-items: center;
+}
+
+.subscribe-button {
+  align-self: center;
 }
 
 .subscribe-input {
@@ -965,17 +978,17 @@ img {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: start;
-    row-gap: 72px;
-    column-gap: 24px;
+    justify-content: flex-start;
+  }
+
+  .page-footer {
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .footer-left,
   .footer-right,
   .footer-subscribe {
-    align-items: baseline;
     text-align: left;
   }
 
@@ -983,30 +996,35 @@ img {
     max-width: 264px;
   }
 
-  .footer-text {
-    max-width: 264px;
-  }
-
-  .footer-right {
-    width: 208px;
-  }
-
   .footer-subscribe {
     max-width: 453px;
   }
 
   .subscribe-form {
-    display: flex;
+    flex-direction: row;
     gap: 24px;
+    align-items: center;
+    justify-content: start;
   }
 
   .subscribe-input {
     width: 264px;
   }
+
+  .subscribe-button {
+    margin: 0;
+  }
 }
+
 @media screen and (min-width: 1158px) {
   .page-footer {
     padding: 100px 0;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .footer-left {

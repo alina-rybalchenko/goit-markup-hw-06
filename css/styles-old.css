@@ -64,25 +64,6 @@
 
 /* Footer */
 
-.footer-left {
-  max-width: 264px;
-  margin-right: 120px;
-}
-
-.footer-right {
-  width: 208px;
-}
-
-.footer-subscribe {
-  margin-left: auto;
-  max-width: 453px;
-}
-
-.page-footer {
-  background-color: #2e2f42;
-  padding: 100px 0;
-}
-
 /* Modal */
 .backdrop {
   width: 100%;
